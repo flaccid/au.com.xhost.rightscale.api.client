@@ -12,8 +12,6 @@ Example usage:
     public class RightScaleAPITest {
     
     	public static void main(String[] args) {
-    		// TODO Auto-generated method stub
-    
     		RightScaleAPIClient rightscale;
     		rightscale = new RightScaleAPIClient("rick@james.com", "charliemurphy", "1456", "1.0", "my.rightscale.com");
     		rightscale.enableDebug();
