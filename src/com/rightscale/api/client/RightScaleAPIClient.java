@@ -38,9 +38,9 @@ public class RightScaleAPIClient {
 		this.accountID = accountID;
 		this.apiVersion = apiVersion;
 		this.endpoint = endpoint;
-		
+
 		config = new DefaultClientConfig();
-        client = Client.create(config);
+		client = Client.create(config);
 	}
 	
 	/**
@@ -49,9 +49,9 @@ public class RightScaleAPIClient {
 	 */
 	public void login() {
 		client.addFilter(new HTTPBasicAuthFilter(userName, userPassword));
-        resource = client.resource("https://"+endpoint+"/api/acct/"+accountID+"/login");
-        response = resource.queryParam("api_version", apiVersion).get(ClientResponse.class);
-      	cookies = response.getCookies();
+		resource = client.resource("https://"+endpoint+"/api/acct/"+accountID+"/login");
+		response = resource.queryParam("api_version", apiVersion).get(ClientResponse.class);
+		cookies = response.getCookies();
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class RightScaleAPIClient {
 	 *
 	 */
 	public void enableDebug() {
-        client.addFilter(new LoggingFilter(System.out));		
+		client.addFilter(new LoggingFilter(System.out));		
 	}
 
 	/**
@@ -106,9 +106,9 @@ public class RightScaleAPIClient {
 	 * Returns the username
 	 *
 	 */
-    public String getUserName() {
-  	   return userName;
-     }
+	public String getUserName() {
+		return userName;
+	}
     
     /**
 	 * Returns the password
