@@ -80,12 +80,7 @@ public class RightScaleAPIClient {
 	 *
 	 */
 	public String getServers() {
-		resource = client.resource("https://"+endpoint+"/api/acct/"+accountID+"/servers");
-		builder = resource.getRequestBuilder();
-		builder.cookie(cookies.get(0));
-		builder.header("X-API-VERSION", apiVersion);
-		response = builder.get(ClientResponse.class);
-		return response.getEntity(String.class);
+		return getRequest("/servers");
 	}
     
 	/**
@@ -110,7 +105,7 @@ public class RightScaleAPIClient {
 		return userName;
 	}
     
-    /**
+	/**
 	 * Returns the password
 	 *
 	 */
