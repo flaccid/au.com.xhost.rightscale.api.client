@@ -98,6 +98,14 @@ public class RightScaleAPIClient {
 	}
 
 	/**
+	 * Returns the cookies
+	 *
+	 */
+	public List<NewCookie> getCookies() {
+		return cookies;
+	}
+
+	/**
 	 * Returns the username
 	 *
 	 */
