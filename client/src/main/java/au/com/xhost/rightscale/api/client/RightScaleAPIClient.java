@@ -1,10 +1,10 @@
 /**
  * RightScale HTTP API client
  */
-package com.rightscale.api.client;
+package au.com.xhost.rightscale.api.client;
 
 /**
- * @author flaccid
+ * @author Chris Fordham aka flaccid
  *
  */
 
