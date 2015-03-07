@@ -1,13 +1,13 @@
-com.rightscale.api.client
-=========================
+au.com.xhost.rightscale.api.client
+==================================
 
-RightScale Java API Client
+RightScale Java API Client (unofficial).
 
 Example usage:
 
-    package test;
+    package bar.foo.test;
     
-    import com.rightscale.api.client.*;
+    import au.com.xhost.rightscale.api.client.*;
     
     public class RightScaleAPITest {
     
@@ -26,9 +26,9 @@ Example usage:
 License and Author
 ==================
 
-Author:: Chris Fordham (<chris.fordham@rightscale.com>)
+Author:: Chris Fordham (<chris@fordham-nagy.id.au>)
 
-Copyright 2013, RightScale Inc.
+Copyright 2013-2015, Chris Fordham
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
