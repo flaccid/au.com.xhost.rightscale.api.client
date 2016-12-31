@@ -14,7 +14,7 @@ public class RightScaleAPIClientTest
         rightscale.enableDebug();
         rightscale.login();
         System.out.print("Logged in "+rightscale.getUserName());
+        System.out.print(rightscale.getRequest("/clouds"));
         System.out.print(rightscale.getServers());
-        System.out.print(rightscale.getRequest("/deployments"));
     }
 }

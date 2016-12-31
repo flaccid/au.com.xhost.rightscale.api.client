@@ -1,3 +1,4 @@
 /src/test/*
 *.classpath
 /bin/
+client/src/main/java/au/com/xhost/rightscale/api/client/RightScaleAPIClientTestLocal.java
