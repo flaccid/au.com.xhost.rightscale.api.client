@@ -5,25 +5,25 @@ RightScale Java API Client (unofficial).
 
 Example usage:
 
-    package bar.foo.test;
+```
+package bar.foo.test;
 
-    import au.com.xhost.rightscale.api.client.*;
+import au.com.xhost.rightscale.api.client.*;
 
-    public class RightScaleAPITest {
-
-    	public static void main(String[] args) {
-    		RightScaleAPIClient rightscale;
-    		rightscale = new RightScaleAPIClient("rick@james.com", "charliemurphy", "1456", "1.5", "my.rightscale.com");
-    		rightscale.enableDebug();
-    		rightscale.login();
-    		System.out.print("Logged in "+rightscale.getUserName());
-    		System.out.print(rightscale.getServers());
-    		System.out.print(rightscale.getRequest("/deployments"));
-    	}
-
+public class RightScaleAPITest {
+    public static void main(String[] args) {
+        RightScaleAPIClient rightscale;
+        rightscale = new RightScaleAPIClient("rick@james.com", "charliemurphy", "1456", "1.5", "us-4.rightscale.com");
+        rightscale.enableDebug();
+        rightscale.login();
+        System.out.print("Logged in "+rightscale.getUserName());
+        System.out.print(rightscale.getRequest("/clouds"));
+        System.out.print(rightscale.getServers());
     }
+}
+```
 
-Use and run `client/src/main/java/au/com/xhost/rightscale/api/client/RightScaleAPIClientTestLocal.java` with your credentials for a quick way to test.
+Use and run `client/src/main/java/au/com/xhost/rightscale/api/client/RightScaleAPIClientTestLocal.java` with your credentials for a quick way to test (this file is ignored by git).
 
 License and Author
 ==================
